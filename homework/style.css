@@ -4,7 +4,8 @@ html {
 }
 body {
   width: 870px;
-  background: #ffffff;
+  background: #fafafa;
   margin: 0 auto;
   padding: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
