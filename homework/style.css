@@ -4,8 +4,48 @@ html {
 }
 body {
   width: 870px;
+  height: 656px;
   background: #fafafa;
   margin: 0 auto;
   padding: 30px;
-  font-family: 'Montserrat', sans-serif;
+  }
+
+h1 {
+  font-family: 'Montserrat Regular', sans-serif;
+  color: #000000;
+}
+
+li  {
+  display: inline;
+  list-style: none;
+  font-family: 'Montserrat Light', sans-serif;
+}
+
+li [href] {
+  color: #666666;
+}
+
+.blogmenu {
+  text-align: left;
+  letter-spacing: inherit;
+  font-size: 14px;
+  color: #999999;
+  }
+
+.select{
+  font-family: 'Montserrat Light', sans-serif;
+  text-align: left;
+  letter-spacing: inherit;
+  font-size: 14px;
+  color: #666666;
+}
+
+
+p {
+  font-family: 'Montserrat Light', sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  text-shadow: -1px 0px #999999;
+  letter-spacing: normal;
+  color: #333333;
 }
