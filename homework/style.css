@@ -27,6 +27,7 @@ li [href] {
 
 .blogmenu {
   text-align: left;
+  display: inline;
   letter-spacing: inherit;
   font-size: 14px;
   color: #999999;
