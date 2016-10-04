@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.maintable {
+  width: 1000px;
+  height: 444px;
+  margin: 0 0 0 0;
+  background: gray;
+
+}
+
+#beautifullist {
+  display: inline-block ;
+}
+li:nth-child(odd){
+background: lightgray;
+}
+
+li:nth-child(gray) {
+  background: white;
+}
