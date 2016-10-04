@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  background: black;
+  counter-reset: pages;
+
 }
 
 .maintable {
@@ -13,10 +16,33 @@ body {
 #beautifullist {
   display: inline-block ;
 }
+
+li {
+  counter-increment: pages;
+  color: black;
+  list-style: none;
+  vertical-align: middle;
+}
+
+li::before {
+  background-color: red;
+  color: white;
+  content: counter(pages);
+}
+
+/* li:nth-child(even)>li::before {
+  background-color: orange;
+  color: white;
+  content: counter(pages);
+} */
+
+
+
 li:nth-child(odd){
 background: lightgray;
 }
 
-li:nth-child(gray) {
-  background: white;
+li:nth-child(even) {
+  background: linear-gradient(to bottom, white, black);
+  /*background-color: white;*/
 }
