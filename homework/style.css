@@ -2,31 +2,55 @@ body {
   margin: 0;
   background: black;
   counter-reset: pages;
-
 }
+
 
 .maintable {
+  padding: 0 0 0 0;
   width: 1000px;
   height: 444px;
-  margin: 0 0 0 0;
-  background: gray;
-
+  background: #555555;
 }
+
 
 #beautifullist {
-  display: inline-block ;
+  display: inline-table;
 }
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: inline-table;
+}
+
 
 li {
   counter-increment: pages;
+
+  width: 920px;  /* 870*/
+  height: 74px;
+
+  font-family: 'Arial' , sans-serif;
   color: black;
-  list-style: none;
-  vertical-align: middle;
+  font-size: 0.875rem;
 }
 
 li::before {
-  background-color: red;
+
+  background: rgba(255, 83, 83, 0.65);
+
+  float: left;
+  width: 50px;
+  height: 49px; /* 74px*/
+  font-size: 1.5rem;
   color: white;
+
+  font-family: "Times New Roman", sans-serif ;
+
+  text-align: center;
+  padding-top: 25px;
+
+
   content: counter(pages);
 }
 
@@ -39,10 +63,16 @@ li::before {
 
 
 li:nth-child(odd){
-background: lightgray;
+background: #cccccc;
 }
 
 li:nth-child(even) {
-  background: linear-gradient(to bottom, white, black);
+  background: #ffffff;
   /*background-color: white;*/
+}
+
+.data {
+
+  vertical-align: middle;
+  padding-top: 0.8125em;
 }
