@@ -25,7 +25,7 @@ ul {
 
 
 li {
-  counter-increment: pages;
+  counter-increment: item;
 
   width: 920px;  /* 870*/
   height: 74px;
@@ -51,13 +51,13 @@ li::before {
   padding-top: 25px;
 
 
-  content: counter(pages);
+  content: counter(item);
 }
 
 /* li:nth-child(even)>li::before {
   background-color: orange;
   color: white;
-  content: counter(pages);
+  content: counter(item);
 } */
 
 
