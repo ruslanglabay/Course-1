@@ -1,68 +1,61 @@
-body {
+* {
   margin: 0;
-  background: black;
-  counter-reset: pages;
+  padding: 0;
 }
 
+body {
+  background: black;
+  counter-reset: item;
+}
 
 .maintable {
-  padding: 0 0 0 0;
-  width: 1000px;
+  padding: 0 40px 0 90px;
+  width: 870px;
   height: 100%;
   background: #555555;
 }
 
-
-
-ul {
-  margin: 0;
+ol {
   list-style: none;
-  display: inline-table;
 }
-
 
 li {
   counter-increment: item;
-
-  width: 920px;  /* 870*/
-  height: 74px;
-
   font-family: 'Arial' , sans-serif;
   color: black;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding: 6px 0 6px 0;
 }
 
-li::before {
+ li::before {
+   float: left;
+   width: 50px;
+   margin-left: -50px;
+   margin-right: 1px;
 
-  background: rgba(255, 83, 83, 0.65);
+   font-family: "Times New Roman", sans-serif ;
+   font-size: 1.5em;
+   color: white;
+   text-align: center;
 
-  float: left;
-  width: 50px;
-  /*height: 49px; /* 74px*/
-  font-size: 1.5rem;
-  color: white;
-
-  font-family: "Times New Roman", sans-serif ;
-
-  text-align: center;
-  padding-top: 25px;
-
-
-  content: counter(item);
+   margin-top: 6px;
+/*
+   display: inline-block;
+   margin-bottom: auto;
+   vertical-align: middle;
+*/
+   content: counter(item);
 }
-
 
 li:nth-child(odd){
-background: #cccccc;
+  background: #cccccc;
+  border-left: 50px solid darkred;
+  margin-left: -50px;
 }
 
 li:nth-child(even) {
   background: #ffffff;
-  /*background-color: white;*/
-}
-
-.data {
-
-  vertical-align: middle;
-  padding-top: 0.8125em;
+  border-left: 50px solid red;
+  margin-left: -50px;
 }
