@@ -8,45 +8,43 @@ body {
   counter-reset: item;
 }
 
-.maintable {
+
+ol {
+  list-style: none;
   padding: 0 40px 0 90px;
   width: 870px;
   height: 100%;
   background: #555555;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-ol {
-  list-style: none;
-}
+
 
 li {
-  counter-increment: item;
-  font-family: 'Arial' , sans-serif;
+  font-family: Arial , sans-serif;
   color: black;
   font-size: 0.9rem;
   line-height: 1.2;
   padding: 6px 0 6px 0;
+  position: relative;
 }
 
  li::before {
+   content: counter(item);
+   counter-increment: item;
    float: left;
    width: 50px;
    margin-left: -50px;
-   margin-right: 1px;
-
-   font-family: "Times New Roman", sans-serif ;
+   margin-right: 5px;
+   font-family: 'Times New Roman', sans-serif;
+   text-shadow: 0.125em 0.125em 0.3em darkred;
    font-size: 1.5em;
    color: white;
    text-align: center;
-
-   margin-top: 6px;
-/*
-   display: inline-block;
-   margin-bottom: auto;
-   vertical-align: middle;
-*/
-   content: counter(item);
-}
+   position: absolute;
+   top: 35%;
+ }
 
 li:nth-child(odd){
   background: #cccccc;
