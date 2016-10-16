@@ -24,14 +24,17 @@ body {
 ol {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+
   list-style: none;
   padding: 0 40px 0 90px;
 
 
-  vertical-align: middle;
+
 }
 
 li {
+
   font-family: 'Arial', sans-serif;
   color: #282828;
   font-size: 1rem;
